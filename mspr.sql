@@ -55,9 +55,9 @@ SELECT DISTINCT
     nom_produit,
     categorie,
     prix_unitaire AS prix_catalogue
-FROM Produits p
-INNER JOIN LignesFacture lf ON lf.produit_id = p.produit_id
-INNER JOIN Factures f ON f.facture_id = lf.facture_id
+FROM Produit p
+INNER JOIN ligne_facture lf ON lf.produit_id = p.produit_id
+INNER JOIN facture f ON f.facture_id = lf.facture_id
 WHERE f.client_id = 102;
  
  
@@ -66,7 +66,7 @@ SELECT DISTINCT
     nom_produit,
     categorie,
     prix_unitaire AS prix_catalogue
-FROM Produits p
-INNER JOIN LignesDevis ld ON ld.produit_id = p.produit_id
-INNER JOIN Devis d ON d.devis_id = ld.devis_id
+FROM Produit p
+INNER JOIN ligne_devis ld ON ld.produit_id = p.produit_id
+INNER JOIN devis d ON d.devis_id = ld.devis_id
 WHERE d.client_id = 102 ;
