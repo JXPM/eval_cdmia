@@ -13,3 +13,7 @@ git status
 git add .
 git commit -m "Creation de la bdd"
 git push origin main 
+
+
+#recuoperer les modifications
+git pull origin main
