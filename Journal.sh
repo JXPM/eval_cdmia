@@ -6,3 +6,10 @@ git commit -m "first commit"
 gh repo create eval_cdmia --private
 git remote add origin https://github.com/JXPM/eval_cdmia.git
 git push --set-upstream origin main
+
+
+#fichier Maj et push
+git status
+git add .
+git commit -m "ajout du Readme et du mcd"
+git push origin main 
