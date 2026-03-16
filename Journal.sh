@@ -11,5 +11,5 @@ git push --set-upstream origin main
 #fichier Maj et push
 git status
 git add .
-git commit -m "ajout du Readme et du mcd"
+git commit -m "Creation de la bdd"
 git push origin main 
