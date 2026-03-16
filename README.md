@@ -125,7 +125,7 @@ de maintenir l’intégrité des données
 
 de clarifier les relations entre les entités
 
-[!Eval_CDMIA](eval)
+![Eval_CDMIA](eval_cdmia.jpg)
 
 Stack technique
 Base de données
