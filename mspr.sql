@@ -48,3 +48,25 @@ CREATE TABLE ligne_devis(
    FOREIGN KEY(devis_id) REFERENCES devis(devis_id),
    FOREIGN KEY(produit_id) REFERENCES produit(produit_id)
 );
+
+
+SELECT DISTINCT
+    produit_id,
+    nom_produit,
+    categorie,
+    prix_unitaire AS prix_catalogue
+FROM Produits p
+INNER JOIN LignesFacture lf ON lf.produit_id = p.produit_id
+INNER JOIN Factures f ON f.facture_id = lf.facture_id
+WHERE f.client_id = 102;
+ 
+ 
+SELECT DISTINCT
+    produit_id,
+    nom_produit,
+    categorie,
+    prix_unitaire AS prix_catalogue
+FROM Produits p
+INNER JOIN LignesDevis ld ON ld.produit_id = p.produit_id
+INNER JOIN Devis d ON d.devis_id = ld.devis_id
+WHERE d.client_id = 102 ;
